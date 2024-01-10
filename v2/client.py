@@ -40,6 +40,10 @@ class Client:
 
     def check_for_messages(self):
         message = self.socket.receive()
+
+        if not message:
+            return
+        
         datatype = message.get_datatype()
 
         match datatype:
@@ -59,6 +63,18 @@ class Client:
         self.config['last_updates'][key] = time.time()
         self.requests = [request for request in self.requests if request != key]
         self.callbacks[key](value)
+
+    def get_input(self):
+        ready, _, _ = select.select([sys.stdin], [], [], 0.1)
+
+        if ready:
+            user_input = sys.stdin.readline().strip()
+            
+            self.send(
+                Message(
+                    user_input
+                )
+            )
 
 
 # Example of using the NonBlockingSocket class in a client
@@ -104,6 +120,7 @@ if __name__ == '__main__':
 
     while True:
         client.check_for_messages()
+        client.get_input()
 
 if __name__ == "__main__123":
     username, address, port = sys.argv[1:]

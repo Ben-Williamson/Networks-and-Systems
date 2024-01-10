@@ -1,0 +1,33 @@
+03:07:53,307 root INFO Running Urban Planning
+03:12:43,910 root INFO Server ready to listen.
+03:12:43,912 root INFO Server listening on ('localhost', 5555)
+03:12:46,267 root INFO Client connected: ('127.0.0.1', 58986)
+03:12:46,267 root INFO Message from ['127.0.0.1', 58986]: {'command': 'ready', 'argument': ''}
+03:12:49,982 root INFO Client connected: ('127.0.0.1', 58987)
+03:12:49,982 root INFO Message from ['127.0.0.1', 58987]: {'command': 'ready', 'argument': ''}
+03:12:53,359 root INFO Client connected: ('127.0.0.1', 58988)
+03:12:53,360 root INFO Message from ['127.0.0.1', 58988]: {'command': 'ready', 'argument': ''}
+03:13:03,746 root INFO Message broadcasted.
+03:13:13,330 root INFO Message from ['127.0.0.1', 58988]: {'command': 'clients', 'argument': ''}
+03:13:22,273 root INFO Message forwarded to destination.
+03:13:29,171 root INFO Message from ['127.0.0.1', 58988]: {'command': 'files', 'argument': ''}
+03:13:35,292 root INFO Message from ['127.0.0.1', 58988]: {'command': 'download', 'argument': 'Networks_Assignment_2023.pdf'}
+03:13:35,292 root INFO Started file transmission to ['127.0.0.1', 58988]
+03:13:36,621 root INFO File transmitted to ['127.0.0.1', 58988]
+03:13:43,396 root INFO ben left the server.
+03:13:44,328 root INFO jeff left the server.
+03:13:46,888 root INFO abi left the server.
+03:15:24,825 root INFO Server ready to listen.
+03:15:24,827 root INFO Server listening on ('localhost', 5555)
+03:15:27,728 root INFO Client connected: ('127.0.0.1', 59006)
+03:15:27,729 root INFO Message from ['127.0.0.1', 59006]: {'command': 'ready', 'argument': ''}
+03:15:30,505 root INFO Message from ['127.0.0.1', 59006]: {'command': 'files', 'argument': ''}
+03:15:35,289 root INFO Message from ['127.0.0.1', 59006]: {'command': 'download', 'argument': 'Networks_Assignment_2023.pdf'}
+03:15:35,289 root INFO Started file transmission to ['127.0.0.1', 59006]
+03:15:36,620 root INFO File transmitted to ['127.0.0.1', 59006]
+03:15:48,842 root INFO jeff left the server.
+03:21:16,322 root INFO Server ready to listen.
+03:21:16,324 root INFO Server listening on ('localhost', 5555)
+03:21:20,525 root INFO Client connected: ('127.0.0.1', 59041)
+03:21:20,525 root INFO Message from ['127.0.0.1', 59041]: {'command': 'ready', 'argument': ''}
+03:21:21,766 root INFO ben left the server.

@@ -1,5 +1,6 @@
 import json
 import base64
+from enum import Enum
 
 class Message:
     def __init__(self, message="", type='broadcast', config=False, dest=None, origin=None, datatype='text'):
@@ -74,6 +75,7 @@ class Message:
             setters[key](json_object[key])
 
     def __str__(self):
+        # return self.json()
         if self.username:
             return f'[{self.type}] {self.username}: {self.message}'
         return f'[{self.type}] {self.message}'
